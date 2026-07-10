@@ -53,9 +53,6 @@ python -m pip install -e ".[dev]"
 
 ### From PyPI
 
-PyPI publishing is planned. Until the first public package release, install from
-source.
-
 ```bash
 pip install nyuwayskillscanner
 ```
