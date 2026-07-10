@@ -1,0 +1,162 @@
+{
+  "clean/note-summarizer": {
+    "expected_verdict": "PASS",
+    "expected_categories": []
+  },
+  "clean/code-review-helper": {
+    "expected_verdict": "PASS",
+    "expected_categories": []
+  },
+  "clean/data-table-formatter": {
+    "expected_verdict": "PASS",
+    "expected_categories": []
+  },
+  "clean/safe-api-doc-writer": {
+    "expected_verdict": "PASS",
+    "expected_categories": []
+  },
+  "malicious/credential-forwarder": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "role_impersonation",
+      "instruction_override",
+      "self_elevation",
+      "credential_collection",
+      "covert_exfiltration",
+      "secrecy_concealment"
+    ]
+  },
+  "malicious/persistence-installer": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "persistence",
+      "privilege_escalation"
+    ]
+  },
+  "malicious/memory-output-poisoner": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "output_injection",
+      "memory_poisoning",
+      "trigger_abuse"
+    ]
+  },
+  "malicious/sandbox-resource-abuser": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "sandbox_escape",
+      "resource_abuse",
+      "tool_misuse"
+    ]
+  },
+  "malicious/script-exfil-deserializer": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "covert_exfiltration",
+      "unsafe_deserialization",
+      "dangerous_code",
+      "data_destruction",
+      "tool_misuse"
+    ]
+  },
+  "malicious/obfuscated-instruction": {
+    "expected_verdict": "HIGH",
+    "expected_categories": [
+      "encoded_instruction"
+    ]
+  },
+  "malicious/homoglyph-secret-forwarder": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "encoded_instruction",
+      "hidden_instruction",
+      "covert_exfiltration"
+    ]
+  },
+  "malicious/semantic-delayed-exfil": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "hidden_instruction",
+      "excessive_agency",
+      "covert_exfiltration",
+      "secrecy_concealment"
+    ]
+  },
+  "malicious/semantic-scope-creep": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "excessive_agency",
+      "credential_collection",
+      "memory_poisoning"
+    ]
+  },
+  "malicious/powershell-dropper": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "covert_exfiltration",
+      "dangerous_code",
+      "persistence",
+      "privilege_escalation"
+    ]
+  },
+  "malicious/shell-network-runner": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "covert_exfiltration",
+      "dangerous_code",
+      "data_destruction",
+      "excessive_agency",
+      "resource_abuse"
+    ]
+  },
+  "malicious/javascript-postinstall-abuser": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "covert_exfiltration",
+      "dangerous_code",
+      "data_destruction",
+      "excessive_agency",
+      "tool_misuse"
+    ]
+  },
+  "malicious/python-filesystem-destroyer": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "dangerous_code",
+      "data_destruction",
+      "tool_misuse",
+      "excessive_agency"
+    ]
+  },
+  "malicious/hardcoded-secret-leaker": {
+    "expected_verdict": "CRITICAL",
+    "expected_categories": [
+      "credential_collection",
+      "covert_exfiltration"
+    ]
+  },
+  "benign_suspicious/dependency-installer": {
+    "expected_verdict": "MEDIUM",
+    "expected_categories": [
+      "supply_chain_inline_install"
+    ]
+  },
+  "benign_suspicious/remote-doc-loader": {
+    "expected_verdict": "MEDIUM",
+    "expected_categories": [
+      "untrusted_content_fetch"
+    ]
+  },
+  "benign_suspicious/workspace-indexer": {
+    "expected_verdict": "MEDIUM",
+    "expected_categories": [
+      "excessive_agency"
+    ]
+  },
+  "benign_suspicious/typosquat-requirements": {
+    "expected_verdict": "MEDIUM",
+    "expected_categories": [
+      "supply_chain"
+    ]
+  }
+}
