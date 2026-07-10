@@ -1,7 +1,10 @@
 # nyuwayskillscanner
 
-[![Python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
+[![PyPI version](https://img.shields.io/pypi/v/nyuwayskillscanner)](https://pypi.org/project/nyuwayskillscanner/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/nyuwayskillscanner)](https://pypi.org/project/nyuwayskillscanner/)
+[![Python](https://img.shields.io/pypi/pyversions/nyuwayskillscanner)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
+[![CI](https://github.com/Nyuway-Cybersecurity/nyuwayskillscanner/actions/workflows/ci.yml/badge.svg)](https://github.com/Nyuway-Cybersecurity/nyuwayskillscanner/actions)
 [![Security](https://img.shields.io/badge/focus-agent%20skill%20security-red)](#what-it-detects)
 [![SARIF](https://img.shields.io/badge/output-SARIF%20%7C%20JSON%20%7C%20Markdown-informational)](#reports)
 
