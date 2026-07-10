@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nyuwayskillscanner"
+version = "0.1.0"
+description = "Enterprise security scanner for AI agent skill bundles (SKILL.md)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Nyuway AI", email = "security@nyuway.ai" },
+]
+keywords = [
+    "skills",
+    "skill-md",
+    "agent",
+    "security",
+    "scanner",
+    "static-analysis",
+    "prompt-injection",
+    "ai-security",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+]
+dependencies = [
+    "click>=8.1",
+    "rich>=13.0",
+    "pyyaml>=6.0",
+    "requests>=2.31",
+]
+
+[project.urls]
+Homepage = "https://nyuway.ai"
+Repository = "https://github.com/Nyuway-Cybersecurity/nyuwayskillscanner"
+"Bug Tracker" = "https://github.com/Nyuway-Cybersecurity/nyuwayskillscanner/issues"
+
+[project.scripts]
+nyuwayskillscanner = "nyuwayskillscanner.cli.main:cli"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nyuwayskillscanner*", "nyuway_scan_core*"]
